@@ -41,6 +41,7 @@ public class Call_Activity extends AppCompatActivity {
     private Button    dialast;
     private Button    dialhash;
     private Button    callbutton;
+    private Button    tomenu;
 
     private ActivityResultLauncher<Intent> phoneCalllauncher;
     private ActivityResultLauncher<String> requestPermissionlauncher;
@@ -75,6 +76,7 @@ public class Call_Activity extends AppCompatActivity {
         dialast      = findViewById(R.id.dialast);
         dialhash     = findViewById(R.id.dialhash);
         callbutton   = findViewById(R.id.callbutton);
+        tomenu       = findViewById(R.id.tomenubutton_call);
 
         setListeners();
     }
@@ -204,6 +206,14 @@ public class Call_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 checkPermissionCall();
+            }
+        });
+
+        tomenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Call_Activity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
