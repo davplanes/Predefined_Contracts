@@ -24,11 +24,11 @@
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="75dp"
-        android:layout_marginEnd="130dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camtitle"
@@ -43,12 +43,12 @@
         android:layout_marginBottom="15dp"
         android:text="Take a photo!"
         android:textColor="#FF9800"
-        app:layout_constraintBottom_toTopOf="@+id/tomenubutton_call"
+        app:layout_constraintBottom_toTopOf="@+id/tomenubutton_cam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/tomenubutton_call"
+        android:id="@+id/tomenubutton_cam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="138dp"

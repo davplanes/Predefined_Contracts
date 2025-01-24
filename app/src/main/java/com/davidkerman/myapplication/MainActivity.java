@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializeViews() {
-        tocall = findViewById(R.id.tocall);
+        tocall  = findViewById(R.id.tocall);
         tophoto = findViewById(R.id.tophoto);
 
         setListeners();

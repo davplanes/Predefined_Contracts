@@ -76,7 +76,7 @@ public class Call_Activity extends AppCompatActivity {
         dialast      = findViewById(R.id.dialast);
         dialhash     = findViewById(R.id.dialhash);
         callbutton   = findViewById(R.id.callbutton);
-        tomenu       = findViewById(R.id.tomenubutton_call);
+        tomenu       = findViewById(R.id.tomenubutton_cam);
 
         setListeners();
     }

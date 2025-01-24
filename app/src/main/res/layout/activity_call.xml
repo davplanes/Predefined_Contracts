@@ -169,7 +169,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dialast" />
 
     <Button
-        android:id="@+id/tomenubutton_call"
+        android:id="@+id/tomenubutton_cam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="138dp"
