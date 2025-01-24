@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,11 @@ import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ImageButton tocall;
+    private ImageButton tophoto;
+    
+    private Intent intent;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +44,32 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        initializeViews();
+    }
 
+    private void initializeViews() {
+        tocall = findViewById(R.id.tocall);
+        tophoto = findViewById(R.id.tophoto);
+
+        setListeners();
+    }
+
+    private void setListeners() {
+        tocall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this, Call_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        tophoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(MainActivity.this, Camera_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
